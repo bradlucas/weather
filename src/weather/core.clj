@@ -8,7 +8,7 @@
   [& args]
   (if args
     (let [zipcode (first args)]
-      (let [[timezone current soon later] (data/weather-report zipcode)]
+      (let [[current soon later] (data/weather-report zipcode)]
         (println (format "Zipcode  : %s" zipcode))
         (println (format "Current  : %s" current))
         (println (format "Soon     : %s" soon))

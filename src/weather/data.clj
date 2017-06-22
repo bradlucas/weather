@@ -19,9 +19,8 @@
   "Return a report for the weather data"
   (let [[lat lng] (zip/get-zipcode-location zipcode)
         m (cheshire/parse-string (:body (get-weather-data lat lng)))]
-    (let [timezone (get m "timezone")
-          current (get-in m ["currently" "summary"])
+    (let [current (get-in m ["currently" "summary"])
           soon (get-in m ["hourly" "summary"])
           later (get-in m ["daily" "summary"])]
-      [timezone current soon later])))
+      [current soon later])))
 
