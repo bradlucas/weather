@@ -1,7 +1,7 @@
-(defproject weather "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
+(defproject weather "0.0.1"
+  :description "Building A Weather App In Clojure"
+  :url "https://github.com/bradlucas/weather"
+  :license {:name "Eclipse Public"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/data.csv "0.1.4"]
