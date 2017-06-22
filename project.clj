@@ -8,5 +8,7 @@
                  [clj-http "3.6.1"]
                  [cheshire "5.7.1"]
                  [environ "1.1.0"]]
+  :profiles {:uberjar {:uberjar-name "weather.jar"}}
   :main weather.core)
+
 
